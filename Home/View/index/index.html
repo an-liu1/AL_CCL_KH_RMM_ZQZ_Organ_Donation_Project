@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript">
+        function confirmDel(id){
+            if(window.confirm('Are you sure to delete?')){
+                location.href="index.php?c=Index&a=delete&id="+id;
+            }
+        }
+    </script>
+</head>
+<body>
+        <?php foreach($arrs as $arr){?>
+            <tr align="center">
+                <td><?php echo $arr['id']?></td>
+                <td><?php echo $arr['name']?></td>
+                <td><?php echo $arr['sex']?></td>
+                <td><?php echo $arr['age']?></td>
+                <td><?php echo $arr['edu']?></td>
+                <td><?php echo $arr['salary']?></td>
+                <td><?php echo $arr['bonus']?></td>
+                <td><?php echo $arr['city']?></td>
+                <td>
+                    <a href="?ac=edit&id=<?php echo $arr['id']?>">Edit</a> | 
+                    <a href="javascript:void(0)" onclick="confirmDel(<?php echo $arr['id']; ?>)">Delete</a>
+                </td>
+            </tr>
+            <?php }?>
+   
+</body>
+</html>

@@ -1,26 +1,47 @@
 <?php
 namespace Admin\Controller;
 use \Frame\Libs\BaseController;
+use \Admin\Model\IndexModel;
 
 final class IndexController extends BaseController{
     public function index(){
-        include VIEW_PATH."index".DS."index.html";
+        //check if the user login
+        $this->denyAccess();
+        //show page
+        $this->smarty->display("index/index.html");
+        // include VIEW_PATH."index".DS."index.html";
     }
 
     public function top(){
-        include VIEW_PATH."index".DS."top.html";
+        //check if the user login
+        $this->denyAccess();
+        //show page
+        $this->smarty->display("index/top.html");
+        // include VIEW_PATH."index".DS."top.php";
     }
 
     public function left(){
-        include VIEW_PATH."index".DS."left.html";
+        //check if the user login
+        $this->denyAccess();
+        //show page
+        $this->smarty->display("index/left.html");
+        // include VIEW_PATH."index".DS."left.html";
     }
 
     public function center(){
-        include VIEW_PATH."index".DS."center.html";
+        //check if the user login
+        $this->denyAccess();
+        //show page
+        $this->smarty->display("index/center.html");
+        // include VIEW_PATH."index".DS."center.html";
     }
 
     public function main(){
-        include VIEW_PATH."index".DS."main.php";
+        //check if the user login
+        $this->denyAccess();
+        //show page
+        $this->smarty->display("index/main.html");
+        // include VIEW_PATH."index".DS."main.html";
     }
 
 }

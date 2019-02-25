@@ -4,5 +4,5 @@ use \Frame\Libs\BaseModel;
 
 final class IndexModel extends BaseModel{
 
-    
+    protected $table = "tbl_user";
 }

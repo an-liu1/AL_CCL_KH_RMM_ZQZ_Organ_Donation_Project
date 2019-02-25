@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="./Public/Admin/Css/public.css" rel="stylesheet" type="text/css" />
+<title>User Management</title>
+</head>
+
+<body leftmargin="2" topmargin="0" marginwidth="0" marginheight="0" oncontextmenu="self.event.returnValue=false">
+<noscript><iframe src=*.html></iframe></noscript>
+<table width="100%" border="0" align="center" cellpadding="1" cellspacing="1" class="border">
+	<tr class="topbg"><td>User Management</td></tr>
+	<tr class="tdbg">
+	  <td height="30">&nbsp;&nbsp;
+	  	<a href="?c=User&a=index">User Management</a>&nbsp;|&nbsp;
+	  	<a href="?c=User&a=add">Add New User</a></td>
+	</tr>
+</table>
+<br />
+<form id="form1" name="form1" method="post" action="?c=User&a=insert">
+<table width="100%" border="0" align="center" cellpadding="3" cellspacing="1" class="border">
+	<tr class="title">
+		<td colspan="2" align="center">Add New User</td>
+	</tr>
+	<tr class="tdbg">
+		<td width="15%" height="30" align="right">Username：</td>
+		<td width="85%">
+			<input name="username" type="text" id="username" size="20" maxlength="15" />
+			<font color="#FF0000">*</font>
+		</td>
+	</tr>
+	<tr class="tdbg">
+		<td height="30" align="right">Password：</td>
+		<td>
+			<input name="password" type="password" id="password" size="20" maxlength="15" />
+			<font color="#FF0000">*</font>
+			<font color="#666666">These two password must match!</font>
+		</td>
+	</tr>
+	<tr class="tdbg">
+		<td height="30" align="right">Confirm：</td>
+		<td>
+			<input name="confirmpwd" type="password" id="confirmpwd" size="20" maxlength="15" />
+			<font color="#FF0000">*</font>
+			<font color="#666666">These two password must match!</font>
+		</td>
+	</tr>
+	<tr class="tdbg">
+		<td height="30" align="right">Name：</td>
+		<td>
+			<input name="name" type="text" id="name" size="20" maxlength="15" />
+			<font color="#FF0000">*</font> <font color="#666666">Your Name</font>
+		</td>
+	</tr>
+	<tr class="tdbg">
+		<td height="30" align="right">Phone Number：</td>
+		<td>
+			<input name="tel" type="text" id="tel" size="20" maxlength="20" />
+			<font color="#FF0000">*</font> 
+		</td>
+	</tr>
+	<tr class="tdbg">
+		<td height="30" align="right">&nbsp;</td>
+		<td>
+			<input type="submit" value="Submit" />
+			<input type="button" onclick="history.go(-1)" value="Back" />
+		</td>
+	</tr>
+</table>
+</form>
+</body>
+</html>

@@ -3,6 +3,7 @@
 namespace Frame\Vendor;
 
 final class PDOWrapper{
+    //database info
     private $db_type;
     private $db_host;
     private $db_user;
@@ -21,6 +22,7 @@ final class PDOWrapper{
         $this->connectDb();
     }
 
+    //connect database
     private function connectDb(){
         $db_dsn = array(
 			'host' => "{$this->db_host}",
@@ -35,6 +37,7 @@ final class PDOWrapper{
         }
     }
 
+    // execute sql query: insert update delete
     public function exec($sql){
         try{
             return $this->pdo->exec($sql);
@@ -43,6 +46,7 @@ final class PDOWrapper{
         }
     }
 
+    //get one row data
     public function fetchOne($sql){
         try{
             $result = $this->pdo->query($sql);
@@ -52,6 +56,7 @@ final class PDOWrapper{
         }
     }
 
+    //get all data
     public function fetchAll($sql){
         try{
             $result = $this->pdo->query($sql);
@@ -61,6 +66,7 @@ final class PDOWrapper{
         }
     }
 
+    //get row num
     public function rowCount($sql){
         try{
             $result = $this->pdo->query($sql);

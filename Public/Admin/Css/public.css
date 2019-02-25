@@ -1,4 +1,4 @@
-/*公共全局样式*/
+/*global*/
 html,body,ul,li,img{margin:0px;padding:0px;}
 ul,ol,li{list-style:none;}
 a:link,a:visited{color:#006600;text-decoration:none;}
@@ -7,7 +7,7 @@ img{border:none;display:block;}
 body{font-size:12px;line-height:20px;font-family:"微软雅黑";background-color:#eee;}
 td{font-size: 12px;line-height:150%;}
 
-/*公共的类样式*/
+/*main*/
 .clear{clear:both;}
 .topbg{
 	background:url(../Images/ad_topbg.gif);
@@ -24,7 +24,7 @@ tr.title a:visited {color:#9F2911;font-weight:normal;}
 tr.title a:active {color:#9F2911;font-weight:normal;}
 tr.title a:hover {color:#9F2911;font-weight:normal;}
 
-/*顶部框架页样式*/
+/*top*/
 .top{height:64px;background:url(../Images/top-bg.gif) repeat-x;}
 .top .top1{color:white;padding:8px 20px 8px 0px;}
 .top .top1 li{height:20px;line-height:20px;float:right;padding:0px 3px;}
@@ -35,7 +35,7 @@ tr.title a:hover {color:#9F2911;font-weight:normal;}
 .top .top2 a:link,.top .top2 a:visited{color:#2c5784;text-decoration:none;}
 .top .top2 a:hover{color:#444444;}
 
-/*左侧框架页样式*/
+/*left*/
 .left{width:182px;}
 .left .title{
 	height:27px;line-height:27px;

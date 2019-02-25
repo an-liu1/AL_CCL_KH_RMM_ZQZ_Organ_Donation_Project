@@ -3,7 +3,7 @@ return array(
     //db config
     'db_type' => 'mysql:',
     'db_host' => 'localhost',
-    'db_name' => 'organ_donation',
+    'db_name' => 'db_organ_donation',
     'db_user' => 'root',
     'db_pass' => '',
     'charset' => 'utf8',

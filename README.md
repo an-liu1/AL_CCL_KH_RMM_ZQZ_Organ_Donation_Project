@@ -7,6 +7,8 @@ lifesaving organ transplant. This is their only treatment option,
 and every 3 days someone will die because they did not get their 
 transplant in time.
 
+![image](https://github.com/janeandjack/Hackathon-/raw/div.img/image/ontarioMap.jpg)
+
 But you can help. When you register your consent for organ and 
 tissue donation, you let those waiting know that you would
 help them if you could.

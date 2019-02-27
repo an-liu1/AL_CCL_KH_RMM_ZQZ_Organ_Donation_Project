@@ -287,6 +287,8 @@ footer { padding: 15px; }
 .table>thead>tr>td { padding: 15px; }
 .media { margin-top: 0; }
 .media-body { vertical-align: middle; }
+.media-heading {font-size: 1.4em; }
+.media-body p {font-size: 1.2em; }
 .badge {
 	background-color: #d6973d;
 	border-radius: 5px;

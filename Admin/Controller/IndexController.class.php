@@ -7,10 +7,15 @@ final class IndexController extends BaseController{
     public function index(){
         //check if the user login
         $this->denyAccess();
+        //get donators info
+        $donators = IndexModel::getInstance()->fetchALL();
         //show page
+        $this->smarty->assign("donators",$donators);
         $this->smarty->display("index/index.html");
         // include VIEW_PATH."index".DS."index.html";
+        
     }
+
 
     // public function top(){
     //     //check if the user login

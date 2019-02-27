@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">  
     <title>Admin Dashboard</title>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="./Public/Admin/css/font-awesome.min.css" rel="stylesheet">
     <link href="./Public/Admin/css/bootstrap.min.css" rel="stylesheet">
     <link href="./Public/Admin/css/index.css" rel="stylesheet">
@@ -22,17 +23,17 @@
         <div class="profile-photo-container">
           <img src="./Public/Admin/images/profile-photo.jpg" alt="Profile Photo" class="img-responsive">  
           <div class="profile-photo-overlay"></div>
-        </div>      
-      
-        <div class="mobile-menu-icon">
+        </div>    
+
+        <!-- <div class="mobile-menu-icon">
             <i class="fa fa-bars"></i>
-        </div>
+        </div> -->
         <nav class="templatemo-left-nav">          
           <ul>
             <li><a href="#" class="active"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
-            <li><a href="#"><i class="fa fa-database fa-fw"></i>Points Collecting</a></li>
+            <li><a href="?c=Points&a=index"><i class="fa fa-database fa-fw"></i>Points Collecting</a></li>
             <li><a href="#"><i class="fa fa-users fa-fw"></i>Users Info</a></li>
-            <li><a href="#"><i class="fa fa-sliders fa-fw"></i>Preferences</a></li>
+            <li><a href="#"><i class="fa fa-sliders fa-fw"></i>Preferences</a></li> 
             <li><a href="?c=User&a=logout"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
           </ul>  
         </nav>
@@ -43,10 +44,11 @@
           <div class="row">
             <nav class="templatemo-top-nav col-lg-12 col-md-12">
               <ul class="text-uppercase">
-                <li><a href="" class="active">Admin panel</a></li>
-                <li><a href="">Dashboard</a></li>
-                <li><a href="">Overview</a></li>
-                <li><a href="">Sign in form</a></li>
+                <li><a href="./index.php">Home Page</a></li>
+                <li><a href="#"  class="active">Dashboard</a></li>
+                <li><a href="?c=Points&a=index">Points Collecting</a></li>
+                <li><a href="">Users Info</a></li>
+                <li><a href="">Donor Form</a></li>
               </ul>  
             </nav> 
           </div>
@@ -63,9 +65,11 @@
             </div>
             <div class="templatemo-content-widget white-bg col-1 text-center">
               
-              <h2 class="text-uppercase">Donation</h2>
-              <h3 class="text-uppercase margin-bottom-10">Be a donator</h3>
-              <img src="./Public/Admin/images/donator.jpg" alt="donator" class="img-circle img-thumbnail">
+              <h2 class="text-uppercase">Points</h2>
+              <h3 class="text-uppercase margin-bottom-10" style="margin-bottom:40px;">Be a donator</h3>
+              <!-- <img src="./Public/Admin/images/donator.jpg" alt="donator" class="img-circle img-thumbnail"> -->
+              <h3 style="margin-bottom:20px;font-size:1em;"><span style="font-size:5.5em;color:pink;">2800</span> Points</h3>
+              <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
             </div>
             <div class="templatemo-content-widget white-bg col-1">
               
@@ -87,39 +91,33 @@
           </div>
           <div class="templatemo-flex-row flex-content-row">
             <div class="col-1">              
-              <div class="templatemo-content-widget orange-bg">
-                                
+              <div class="templatemo-content-widget orange-bg">                               
                 <div class="media">
-                  <div class="media-left">
-                    <a href="#">
-                      <img class="media-object img-circle" src="images/sunset.jpg" alt="Sunset">
-                    </a>
-                  </div>
                   <div class="media-body">
-                    <h2 class="media-heading text-uppercase">Consectur Fusce Enim</h2>
-                    <p>Phasellus dapibus nulla quis risus auctor, non placerat augue consectetur.</p>  
+                    <p><span class="media-heading text-uppercase">John Smith</span> used <span class="media-heading text-uppercase">100</span> points to change <span class="media-heading text-uppercase">a pen</span> !</p>  
                   </div>        
                 </div>                
               </div>            
               <div class="templatemo-content-widget white-bg">
                 
                 <div class="media">
-                  <div class="media-left">
-                    <a href="#">
-                      <img class="media-object img-circle" src="images/sunset.jpg" alt="Sunset">
-                    </a>
-                  </div>
                   <div class="media-body">
-                    <h2 class="media-heading text-uppercase">Consectur Fusce Enim</h2>
-                    <p>Phasellus dapibus nulla quis risus auctor, non placerat augue consectetur.</p>  
-                  </div>
+                    <p><span class="media-heading text-uppercase">Bill Jones</span> used <span class="media-heading text-uppercase">500</span> points to change <span class="media-heading text-uppercase">a T-shirt</span> !</p>  
+                  </div>        
+                </div>           
+              </div>
+              <div class="templatemo-content-widget green-bg">                               
+                <div class="media">
+                  <div class="media-body">
+                    <p><span class="media-heading text-uppercase">Mary James</span> used <span class="media-heading text-uppercase">1000</span> points to change <span class="media-heading text-uppercase">gift card</span>  !</p>  
+                  </div>        
                 </div>                
-              </div>            
+              </div>                  
             </div>
             <div class="col-1">
               <div class="panel panel-default templatemo-content-widget white-bg no-padding templatemo-overflow-hidden">
                 
-                <div class="panel-heading templatemo-position-relative"><h2 class="text-uppercase">User Table</h2></div>
+                <div class="panel-heading templatemo-position-relative"><h2 class="text-uppercase">Donator Table</h2></div>
                 <div class="table-responsive">
                   <table class="table table-striped table-bordered">
                     <thead>
@@ -127,42 +125,20 @@
                         <td>No.</td>
                         <td>First Name</td>
                         <td>Last Name</td>
-                        <td>Username</td>
+                        <td>Donated Organ</td>
                       </tr>
                     </thead>
                     <tbody>
+                        <{foreach $donators as $donator}>
                       <tr>
-                        <td>1.</td>
-                        <td>John</td>
-                        <td>Smith</td>
-                        <td>@jS</td>
+                        <td><{$donator.id}></td>
+                        <td><{$donator.first_name}></td>
+                        <td><{$donator.last_name}></td>
+                        <td><{$donator.organ}></td>
                       </tr>
-                      <tr>
-                        <td>2.</td>
-                        <td>Bill</td>
-                        <td>Jones</td>
-                        <td>@bJ</td>
-                      </tr>
-                      <tr>
-                        <td>3.</td>
-                        <td>Mary</td>
-                        <td>James</td>
-                        <td>@mJ</td>
-                      </tr>
-                      <tr>
-                        <td>4.</td>
-                        <td>Steve</td>
-                        <td>Bride</td>
-                        <td>@sB</td>
-                      </tr>
-                      <tr>
-                        <td>5.</td>
-                        <td>Paul</td>
-                        <td>Richard</td>
-                        <td>@pR</td>
-                      </tr>                    
+                      <{/foreach}>                      
                     </tbody>
-                  </table>    
+                  </table>  
                 </div>                          
               </div>
             </div>           

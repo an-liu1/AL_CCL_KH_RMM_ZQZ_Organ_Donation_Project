@@ -14,10 +14,27 @@ final class UserController extends BaseController{
     }
 
     public function add(){
-        //check if the user exists
-        $this->denyAccess();
-        //if exists,show add user page
-        $this->smarty->display("User/add.html");
+        
+        //get data from user
+        $data['user_name'] = $_POST['username'];
+        $data['user_pass'] = md5($_POST['password']);
+        $data['name'] = $_POST['name'];
+        $data['tel'] = $_POST['tel'];
+        $data['email'] = $_POST['email'];
+        $data['points'] = '0';
+        $data['register_date'] = time();
+        
+        //check if the username exists
+        if(UserModel::getInstance()->rowCount("user_name='{$data['user_name']}'")){
+            $this->jump("Username already exists, try other Please!","?c=User&a=signup");
+        }
+        
+        if(UserModel::getInstance()->insert($data)){
+            $this->jump("Congratulation!!Successfully registered!!","?c=User&a=login");
+        }else{
+            $this->jump("Hummmm, something worng! Try again please!","?c=User&a=signup");
+        }
+
     }
 
     public function delete(){
@@ -41,7 +58,7 @@ final class UserController extends BaseController{
     public function loginCheck(){
         //get form data
         $username = $_POST['username'];
-        $password = $_POST['password'];
+        $password = md5($_POST['password']);
         //check database
         $user = UserModel::getInstance()->fetchOne("user_name='$username' AND user_pass='$password'");
 

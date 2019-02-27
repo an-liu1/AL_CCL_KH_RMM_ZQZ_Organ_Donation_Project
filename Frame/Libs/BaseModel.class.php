@@ -51,7 +51,7 @@ abstract class BaseModel{
         $values = "";
         foreach ($data as $key => $value) {
             $fields .= "$key,";
-            $values .= "$value,";
+            $values .= "'$value',";
         }
         //Remove the comma at the end of the string
         $fields = rtrim($fields,",");

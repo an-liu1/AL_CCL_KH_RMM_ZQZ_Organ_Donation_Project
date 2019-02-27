@@ -1,31 +1,22 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>Log In</title>
+    <title>Sign Up</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <link rel="stylesheet" href="./Public/Admin/Css/login.css" type="text/css" media="all">
     <link href="//fonts.googleapis.com/css?family=Mukta+Mahee:200,300,400,500,600,700,800" rel="stylesheet">
     <link rel="stylesheet" href="./Public/Admin/Css/font-awesome.css" type="text/css" media="all">
-    <script>
-        addEventListener("load", function () {
-            setTimeout(hideURLbar, 0);
-        }, false);
-
-        function hideURLbar() {
-            window.scrollTo(0, 1);
-        }
-    </script>
 </head>
 
 <body>
     <h1 class="title-agile text-center">organ donation</h1>
     <div class="content-w3ls">
         <div class="content-top-agile">
-            <h2>sign in</h2>
+            <h2>sign up</h2>
         </div>
         <div class="content-bottom">
-            <form action="?c=User&a=loginCheck" method="post">
+            <form action="?c=User&a=add" method="post">
                 <div class="field-group">
                     <span class="fa fa-user" aria-hidden="true"></span>
                     <div class="wthree-field">
@@ -38,21 +29,35 @@
                         <input name="password" id="password" type="Password" placeholder="password" required>
                     </div>
                 </div>
-                <ul class="list-login">
+                <div class="field-group">
+                    <span class="fa fa-male" aria-hidden="true"></span>
+                    <div class="wthree-field">
+                        <input name="name" id="fullname" type="text" placeholder="full name" required>
+                    </div>
+				</div>
+				<div class="field-group">
+                    <span class="fa fa-phone" aria-hidden="true"></span>
+                    <div class="wthree-field">
+                        <input name="tel" id="tel" type="text" placeholder="phone number" required>
+                    </div>
+				</div>
+				<div class="field-group">
+                    <span class="fa fa-envelope" aria-hidden="true"></span>
+                    <div class="wthree-field">
+                        <input name="email" id="email" type="email" placeholder="email" required>
+                    </div>
+				</div>
+				<ul class="list-login">
                     <li class="switch-agileits">
-                        <label class="switch">
-                            <input type="checkbox">
-                            <span class="slider round"></span>
-                            keep me signed in
-                        </label>
+                        <label class="switch">already have an account?</label>
                     </li>
                     <li>
-                        <a href="?c=User&a=signup" class="text-right">Sign Up</a>
+                        <a href="?c=User&a=login" class="text-right" style="color:red;">Log in here</a>
                     </li>
                     <li class="clearfix"></li>
                 </ul>
                 <div class="wthree-field">
-                    <input id="saveForm" name="saveForm" type="submit" value="sign in" />
+                    <input id="saveForm" name="saveForm" type="submit" value="submit" />
                 </div>
             </form>
         </div>

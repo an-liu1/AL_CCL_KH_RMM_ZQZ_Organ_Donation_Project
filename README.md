@@ -5,7 +5,7 @@
 Today, in Ontario, there are over 1,500 people waiting for a 
 lifesaving organ transplant. This is their only treatment option, 
 and every 3 days someone will die because they did not get their 
-transplant in time./br/
+transplant in time.
 
 But you can help. When you register your consent for organ and 
 tissue donation, you let those waiting know that you would

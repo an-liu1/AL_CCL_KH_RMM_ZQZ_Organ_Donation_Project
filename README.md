@@ -15,11 +15,7 @@ help them if you could.
 
 ## What should we know
 
-* The thinly populated Canadian Shield in the northwestern and central portions, which comprises over half the land area of Ontario.
-
-* The virtually unpopulated Hudson Bay Lowlands in the extreme north and northeast, mainly swampy and sparsely forested.
-
-* Southern Ontario which is further sub-divided into four regions.
+We are actively involved in raising awareness and education for organ and tissue donation and transplantation. We maintain a national transplant registry for inter-provincial organ sharing and related programs and we help save and improve lives by working closely with the organ and tissue donation and transplantation communities.
 
 
 

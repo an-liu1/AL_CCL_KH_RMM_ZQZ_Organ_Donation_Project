@@ -14,7 +14,8 @@ final class UserController extends BaseController{
     }
 
     public function add(){
-        
+        //check if the user exists
+        $this->denyAccess();
         //get data from user
         $data['user_name'] = $_POST['username'];
         $data['user_pass'] = md5($_POST['password']);
@@ -37,6 +38,42 @@ final class UserController extends BaseController{
 
     }
 
+    public function showUser(){
+        //check if the user exists
+        $this->denyAccess();
+        //get login id 
+        $id = $_SESSION['uid'];
+        //get user info
+        $userInfo = UserModel::getInstance()->fetchOne($id);
+        $this->smarty->assign("userInfo",$userInfo);
+        $this->smarty->display("User/edit.html");
+    }
+
+    public function edit(){
+        //check if the user exists
+        $this->denyAccess();
+        //geu login id
+        $id = $_SESSION['uid'];
+        //get edited user info
+        $data['user_name'] = $_POST['user_name'];
+        $data['tel'] = $_POST['tel'];
+        $data['email'] = $_POST['email'];
+        $data['name'] = $_POST['name'];
+
+        //check if the two passwords match
+        if($_POST['new_pass'] != $_POST['confirm_pass']){
+            $this->jump("Those passwords did not match. Try again!","?c=User&a=showUser");
+        }else{
+            $data['user_pass'] = md5($_POST['new_pass']);
+        }
+        //edit user info
+        if(UserModel::getInstance()->update($data,$id)){
+            $this->jump("Successfully change your information!!","?c=User&a=showUser");
+        }else{
+            $this->jump("Failed to change your information. Try again!","?c=User&a=showUser");
+        }
+        
+    }
     public function delete(){
         //check if the user exists
         $this->denyAccess();

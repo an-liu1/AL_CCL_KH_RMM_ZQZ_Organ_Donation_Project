@@ -437,7 +437,6 @@ footer { padding: 15px; }
 	height: 100px;
 	overflow-y: scroll;	
 }
-
 /* 8. Media Queries
 ------------------------------*/
 @media screen and (max-width: 1199px) and (min-width: 991px) {

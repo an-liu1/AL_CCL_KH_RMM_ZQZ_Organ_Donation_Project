@@ -12,6 +12,8 @@
     <link href="./Public/Admin/css/font-awesome.min.css" rel="stylesheet">
     <link href="./Public/Admin/css/bootstrap.min.css" rel="stylesheet">
     <link href="./Public/Admin/css/index.css" rel="stylesheet">
+    <link href="./Public/Admin/css/ponit&upload.css" rel="stylesheet">
+    
 
   </head>
   <body>  
@@ -20,7 +22,7 @@
       <div class="templatemo-sidebar">
         <header class="templatemo-site-header">
           <div class="square"></div>
-          <h1>Organ Donate</h1>
+          <h1>Miracle Life</h1>
         </header>
         <div class="profile-photo-container">
           <img src="./Public/Admin/images/profile-photo.jpg" alt="Profile Photo" class="img-responsive">  
@@ -35,7 +37,7 @@
             <li><a href="?c=index&a=index"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
             <li><a href="#" class="active"><i class="fa fa-database fa-fw"></i>Points Collecting</a></li>
             <li><a href="?c=User&a=showUser"><i class="fa fa-users fa-fw"></i>Users Info</a></li>
-            <li><a href="#"><i class="fa fa-sliders fa-fw"></i>Preferences</a></li> 
+            <li><a href="?c=Donor&a=index"><i class="fa fa-sliders fa-fw"></i>Become Donor</a></li> 
             <li><a href="?c=User&a=logout"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
           </ul>  
         </nav>
@@ -49,88 +51,81 @@
                 <li><a href="?c=index&a=index">Dashboard</a></li>
                 <li><a href="?c=Points&a=index"  class="active">Points Collecting</a></li>
                 <li><a href="?c=User&a=showUser">Users Info</a></li>
-                <li><a href="">Donator Form</a></li>
+                <li><a href="./Public/Admin/donor_form/Miracle_life_Organ_Donation_policy.pdf">Download Donor Form</a></li>
               </ul>  
             </nav> 
           </div>
         </div>
-        <div class="templatemo-content-container">
-          <div class="templatemo-content-widget no-padding">
-            <div class="panel panel-default table-responsive">
-              <table class="table table-striped table-bordered templatemo-user-table">
-                <thead>
-                  <tr>
-                    <td><a href="" class="white-text">#</span></a></td>
-                    <td><a href="" class="white-text">First Name</span></a></td>
-                    <td><a href="" class="white-text">Last Name</span></a></td>
-                    <td><a href="" class="white-text">User Name</span></a></td>
-                    <td><a href="" class="white-text">Email</span></a></td>
-                    <td>Edit</td>
-                    <td>Action</td>
-                    <td>Delete</td>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>1.</td>
-                    <td>John</td>
-                    <td>Smith</td>
-                    <td>@jS</td>
-                    <td>js@company.com</td>
-                    <td><a href="" class="templatemo-edit-btn">Edit</a></td>
-                    <td><a href="" class="templatemo-link">Action</a></td>
-                    <td><a href="" class="templatemo-link">Delete</a></td>
-                  </tr>                  
-                </tbody>
-              </table>    
-            </div>                          
-
-            <div class="templatemo-content-widget white-bg col-md-4 text-center templatemo-position-relative">
-              <img src="./Public/Admin/images/person.jpg" alt="Bicycle" class="img-circle img-thumbnail margin-bottom-30">
-              <h2 class="text-uppercase blue-text margin-bottom-5">Paul Smith</h2>
-              <h3 class="text-uppercase margin-bottom-70">Managing Director</h3>
+        <div class="content-redeem-img">
+          <img style="height: 300px; width: 100%;" src="./Public/Admin/images/firstpage.jpg" class="img-fluid" alt="./Public/Admin/images/firstpage.jpg">
+        </div>
+        <div class="content-redeem-text">
+            
+        </div>
+        <div class="container" id="content-redeem">
+          <!-- Example row of columns -->
+          <div class="row">
+            <div class="col-md-3 text-center templatemo-position-relative">
+         
+              <img src="./Public/Admin/images/person.jpg" alt="Bicycle" class="img-thumbnail margin-bottom-30">
+              <h2 id="content-item">PEN</h2>
+              <h3 id="content-points" class="text-uppercase margin-bottom-70">400 points</h3>
+              <button id="redeem" type="button" class="btn btn-primary btn-lg">Redeem</button>
             </div>
-
-            <div class="templatemo-content-widget white-bg col-md-3  text-center templatemo-position-relative">
-              <img src="./Public/Admin/images/person.jpg" alt="Bicycle" class="img-circle img-thumbnail margin-bottom-30">
-              <h2 class="text-uppercase blue-text margin-bottom-5">Paul Smith</h2>
-              <h3 class="text-uppercase margin-bottom-70">Managing Director</h3>
+            <div class="col-md-3 text-center templatemo-position-relative">
+         
+              <img src="./Public/Admin/images/person.jpg" alt="Bicycle" class=" img-thumbnail margin-bottom-30">
+              <h2 id="content-item">PEN</h2>
+              <h3 id="content-points" class="text-uppercase margin-bottom-70">400 points</h3>
+              <button id="redeem" type="button" class="btn btn-primary btn-lg">Redeem</button>
             </div>
-
-            <div class="templatemo-content-widget white-bg col-md-4 text-center templatemo-position-relative">
-              <img src="./Public/Admin/images/person.jpg" alt="Bicycle" class="img-circle img-thumbnail margin-bottom-30">
-              <h2 class="text-uppercase blue-text margin-bottom-5">Paul Smith</h2>
-              <h3 class="text-uppercase margin-bottom-70">Managing Director</h3>
+            <div class="col-md-3 text-center templatemo-position-relative">
+        
+              <img src="./Public/Admin/images/person.jpg" alt="Bicycle" class="img-thumbnail margin-bottom-30">
+              <h2 id="content-item">PEN</h2>
+              <h3 id="content-points" class="text-uppercase margin-bottom-70">400 points</h3>
+              <button id="redeem" type="button" class="btn btn-primary btn-lg">Redeem</button>
+           </div>
+            <div class="col-md-3 text-center templatemo-position-relative">
+          
+              <img src="./Public/Admin/images/person.jpg" alt="Bicycle" class="img-thumbnail margin-bottom-30">
+              <h2 id="content-item">PEN</h2>
+              <h3 id="content-points" class="text-uppercase margin-bottom-70">400 points</h3>
+              <button id="redeem" type="button" class="btn btn-primary btn-lg">Redeem</button>
             </div>
-
+            <div class="col-md-3 text-center templatemo-position-relative">
+         
+              <img src="./Public/Admin/images/person.jpg" alt="Bicycle" class="img-thumbnail margin-bottom-30">
+              <h2 id="content-item">PEN</h2>
+              <h3 id="content-points" class="text-uppercase margin-bottom-70">400 points</h3>
+              <button id="redeem" type="button" class="btn btn-primary btn-lg">Redeem</button>
             </div>
-
-            <!-- <div class="templatemo-content-widget white-bg col-1 templatemo-position-relative templatemo-content-img-bg">
-              <img src="images/sunset-big.jpg" alt="Sunset" class="img-responsive content-bg-img">
-              <i class="fa fa-heart"></i>
-              <h2 class="templatemo-position-relative white-text">Sunset</h2>
-              <div class="view-img-btn-wrap">
-                <a href="" class="btn btn-default templatemo-view-img-btn">View</a>  
-              </div>              
-            </div> -->
+            <div class="col-md-3 text-center templatemo-position-relative">
+         
+              <img src="./Public/Admin/images/person.jpg" alt="Bicycle" class="img-thumbnail margin-bottom-30">
+              <h2 id="content-item">PEN</h2>
+              <h3 id="content-points" class="text-uppercase margin-bottom-70">400 points</h3>
+              <button id="redeem" type="button" class="btn btn-primary btn-lg">Redeem</button>
+            </div>
+            <div class="col-md-3 text-center templatemo-position-relative">
+        
+              <img src="./Public/Admin/images/person.jpg" alt="Bicycle" class="img-thumbnail margin-bottom-30">
+              <h2 id="content-item">PEN</h2>
+              <h3 id="content-points" class="text-uppercase margin-bottom-70">400 points</h3>
+              <button id="redeem" type="button" class="btn btn-primary btn-lg">Redeem</button>
+           </div>
+            <div class="col-md-3 text-center templatemo-position-relative">
+          
+              <img src="./Public/Admin/images/person.jpg" alt="Bicycle" class="img-thumbnail margin-bottom-30">
+              <h2 id="content-item">PEN</h2>
+              <h3 id="content-points" class="text-uppercase margin-bottom-70">400 points</h3>
+              <button id="redeem" type="button" class="btn btn-primary btn-lg">Redeem</button>
+            </div>
           </div>
-          <!-- <div class="pagination-wrap">
-            <ul class="pagination">
-              <li><a href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li class="active"><a href="#">3 <span class="sr-only">(current)</span></a></li>
-              <li><a href="#">4</a></li>
-              <li><a href="#">5</a></li>
-              <li>
-                <a href="#" aria-label="Next">
-                  <span aria-hidden="true"><i class="fa fa-play"></i></span>
-                </a>
-              </li>
-            </ul>
-          </div>          
+      </div>
           <footer class="text-right">
             <p>Copyright &copy; 2019 Organ Donation. All rights reserved | Design by An</p>
-          </footer>          -->
+          </footer>       
         </div>
       </div>
     </div>

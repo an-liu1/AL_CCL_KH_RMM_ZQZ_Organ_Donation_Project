@@ -17,7 +17,7 @@
       <div class="templatemo-sidebar">
         <header class="templatemo-site-header">
           <div class="square"></div>
-          <h1>Organ Donate</h1>
+          <h1>Miracle Life</h1>
         </header>
         <div class="profile-photo-container">
           <img src="./Public/Admin/images/profile-photo.jpg" alt="Profile Photo" class="img-responsive">  
@@ -32,7 +32,7 @@
             <li><a href="?c=index&a=index"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
             <li><a href="?c=Points&a=index"><i class="fa fa-database fa-fw"></i>Points Collecting</a></li>
             <li><a href="?c=User&a=showUser" class="active"><i class="fa fa-users fa-fw"></i>Users Info</a></li>
-            <li><a href="#"><i class="fa fa-sliders fa-fw"></i>Preferences</a></li> 
+            <li><a href="?c=Donor&a=index"><i class="fa fa-sliders fa-fw"></i>Become Donor</a></li> 
             <li><a href="?c=User&a=logout"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
           </ul>  
         </nav>
@@ -47,7 +47,7 @@
                 <li><a href="?c=index&a=index">Dashboard</a></li>
                 <li><a href="?c=Points&a=index">Points Collecting</a></li>
                 <li><a href="?c=User&a=showUser" class="active">Users Info</a></li>
-                <li><a href="">Donor Form</a></li>
+                <li><a href="./Public/Admin/donor_form/Miracle_life_Organ_Donation_policy.pdf">Download Donor Form</a></li>
               </ul>  
             </nav> 
           </div>
@@ -102,8 +102,18 @@
 											<label for="inputRegisterDate">Register Date</label>
 											<input type="text" class="form-control" id="inputRegisterDate" name="register_date" value="<{$userInfo.register_date|date_format:'Y-m-d H:i:s'}>" readonly="readonly">
 									</div> 
-								</div>
-
+                </div>
+                
+                <div class="row form-group">
+                  <div class="col-lg-6 col-md-6 form-group">                  
+                      <label for="inputLoginTimes">Login Times</label>
+                      <input type="text" class="form-control" id="inputLoginTimes" value="<{$userInfo.login_times}>" readonly="readonly">                  
+                  </div>
+                  <div class="col-lg-6 col-md-6 form-group">                  
+                      <label for="inputPoints">Collected Points</label>
+                      <input type="text" class="form-control" id="inputPoints" value="<{$userInfo.points}>" readonly="readonly">                  
+                  </div> 
+                </div>
 
               <div class="form-group text-right">
                 <button type="submit" class="templatemo-blue-button">Update</button>

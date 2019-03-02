@@ -1,0 +1,76 @@
+#content-redeem
+{
+    margin-top: 50px;
+}
+#redeem
+{
+    margin-top: -100px;
+}
+#content-points
+{
+    margin-top: 5px;
+}
+#content-item
+{
+    margin-top: -15px;
+}
+#content-upload-h2
+{
+    font-size: 2em;
+    margin-top: 2%;
+    font-family: 'Open Sans', sans-serif; 
+}
+#content-upload-p
+{
+    font-family: 'Open Sans', sans-serif; 
+    width: 90%;
+    font-size: 1.3em;
+    margin-left: 4%;
+    line-height: 190%;
+    margin-top: 1%;
+}
+
+
+.upload-drop-zone {
+    height: 200px;
+    border-width: 2px;
+    margin-bottom: 20px;
+  }
+  
+  /* skin.css Style*/
+  .upload-drop-zone {
+    color: #ccc;
+    border-style: dashed;
+    border-color: #ccc;
+    line-height: 200px;
+    text-align: center
+  }
+  .upload-drop-zone.drop {
+    color: #222;
+    border-color: #222;
+  }
+  
+  
+  
+  .image-preview-input {
+      position: relative;
+      overflow: hidden;
+      margin: 0px;    
+      color: #333;
+      background-color: #fff;
+      border-color: #ccc;    
+  }
+  .image-preview-input input[type=file] {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 0;
+      padding: 0;
+      font-size: 20px;
+      cursor: pointer;
+      opacity: 0;
+      filter: alpha(opacity=0);
+  }
+  .image-preview-input-title {
+      margin-left:2px;
+  }

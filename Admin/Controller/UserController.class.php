@@ -14,28 +14,31 @@ final class UserController extends BaseController{
     }
 
     public function add(){
-        //check if the user exists
-        $this->denyAccess();
         //get data from user
         $data['user_name'] = $_POST['username'];
         $data['user_pass'] = md5($_POST['password']);
         $data['name'] = $_POST['name'];
         $data['tel'] = $_POST['tel'];
         $data['email'] = $_POST['email'];
-        $data['points'] = '0';
+        $data['points'] = '300';
         $data['register_date'] = time();
-        
-        //check if the username exists
-        if(UserModel::getInstance()->rowCount("user_name='{$data['user_name']}'")){
-            $this->jump("Username already exists, try other Please!","?c=User&a=signup");
+        $check = isset($_POST['check'])?1:0;
+        //check if the user view the policy 
+        if($check == 0){
+            $this->jump("Please view the policy first, thank you!!","?c=User&a=signup");
+        }elseif($check == 1){
+            
+            //check if the username exists
+            if(UserModel::getInstance()->rowCount("user_name='{$data['user_name']}'")){
+                $this->jump("Username already exists, try other Please!","?c=User&a=signup");
+            }
+            
+            if(UserModel::getInstance()->insert($data)){
+                $this->jump("Congratulation!!Successfully registered and you get 300 ponits!!!","?c=User&a=login");
+            }else{
+                $this->jump("Hummmm, something worng! Try again please!","?c=User&a=signup");
+            }
         }
-        
-        if(UserModel::getInstance()->insert($data)){
-            $this->jump("Congratulation!!Successfully registered!!","?c=User&a=login");
-        }else{
-            $this->jump("Hummmm, something worng! Try again please!","?c=User&a=signup");
-        }
-
     }
 
     public function showUser(){
@@ -44,7 +47,7 @@ final class UserController extends BaseController{
         //get login id 
         $id = $_SESSION['uid'];
         //get user info
-        $userInfo = UserModel::getInstance()->fetchOne($id);
+        $userInfo = UserModel::getInstance()->fetchOne("id = $id");
         $this->smarty->assign("userInfo",$userInfo);
         $this->smarty->display("User/edit.html");
     }
@@ -105,7 +108,7 @@ final class UserController extends BaseController{
         //update user info
         $data['last_login_ip'] = $_SERVER['REMOTE_ADDR'];
         $data['last_login_time'] = time();
-        $data['login_times'] = $user['login_times']+1;
+        $data['login_times'] = $user['login_times']+1; 
         if(!UserModel::getInstance()->update($data,$user['id'])){
             $this->jump("Failed to update user's info!","?c=User&a=login");
         }
@@ -113,7 +116,7 @@ final class UserController extends BaseController{
         $_SESSION['username'] = $user['user_name'];
         $_SESSION['uid'] = $user['id'];
 
-        $this->jump("Successfully Login!!","?c=Index&a=index");
+        header("refresh:0;url=?c=Index&a=index");
     }
 
     public function signup(){

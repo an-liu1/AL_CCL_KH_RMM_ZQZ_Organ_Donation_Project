@@ -26,7 +26,7 @@ final class IndexController extends BaseController{
         //get user info 
         $id = $_SESSION['uid'];
         $getPoints = UserModel::getInstance()->fetchOne("id = $id");
-        $last_login_time = $getPoints['last_login_time'];
+        $last_login_time = $_SESSION['last_login_time'];
         $today = strtotime(date('Y-m-d'));
         if($last_login_time < $today){
             $data['points'] = $getPoints['points'] + 20;

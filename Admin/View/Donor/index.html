@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">  
     <title>Points Exchange</title>
-    <meta name="description" content="">
-    <meta name="author" content="templatemo">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="./Public/Admin/css/font-awesome.min.css" rel="stylesheet">
@@ -23,7 +21,7 @@
           <h1>Miracle Life</h1>
         </header>
         <div class="profile-photo-container">
-          <img src="./Public/Admin/images/profile-photo.jpg" alt="Profile Photo" class="img-responsive">  
+          <img src="./Public/Admin/images/logo.svg" alt="Profile Photo" class="img-responsive">  
           <div class="profile-photo-overlay"></div>
         </div>    
 
@@ -73,32 +71,26 @@
     
           <div class="col-md-12">
           <div class="panel panel-info">
-            <div class="panel-heading "><strong>Upload files</strong> <small> </small></div>
+            <div class="panel-heading "><strong>Upload files</strong> <small>the name should be your username_donor_form, like 'admin_donor_form'</small></div>
             <div class="panel-body">
+              <form action="?c=Donor&a=submitForm" method="post" enctype="multipart/form-data">
+                
               <div class="input-group image-preview">
+                  
                 <input placeholder="" type="text" class="form-control image-preview-filename" disabled="disabled">
-                <!-- don't give a name === doesn't send on POST/GET --> 
                 <span class="input-group-btn"> 
-                <!-- image-preview-clear button -->
-                <button type="button" class="btn btn-default image-preview-clear" style="display:none;"> <span class="glyphicon glyphicon-remove"></span> Clear </button>
-                <!-- image-preview-input -->
+                
                 <div class="btn btn-default image-preview-input"> <span class="glyphicon glyphicon-folder-open"></span> <span class="image-preview-input-title">Browse</span>
-                  <input type="file" accept="image/png, image/jpeg, image/gif" name="input-file-preview"/>
-                  <!-- rename it --> 
+                  <input type="file" name="donor_form" id="donor_form">
                 </div>
-                <button type="button" class="btn btn-labeled btn-primary"> <span class="btn-label"><i class="glyphicon glyphicon-upload"></i> </span>Upload</button>
-                </span> </div>
-              <!-- /input-group image-preview [TO HERE]--> 
-              
+                <button type="submit" name="submit" class="btn btn-labeled btn-primary"> <span class="btn-label"><i class="glyphicon glyphicon-upload"></i> </span>Upload</button>
+                </span> 
+              </div>
+            </form>
               <br />
               
               <!-- Drop Zone -->
               <div class="upload-drop-zone" id="drop-zone"> Or drag and drop files here </div>
-              <br />
-              <!-- Progress Bar -->
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"> <span class="sr-only">60% Complete</span> </div>
-              </div>
               <br />
     
             </div>

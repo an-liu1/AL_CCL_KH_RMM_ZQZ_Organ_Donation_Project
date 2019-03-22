@@ -105,6 +105,8 @@ final class UserController extends BaseController{
         if(empty($user)){
             $this->jump("Please check your username and password!","?c=User&a=login");
         }
+        //get last login time to show on the page
+        $_SESSION['last_login_time'] = $user['last_login_time']; 
         //update user info
         $data['last_login_ip'] = $_SERVER['REMOTE_ADDR'];
         $data['last_login_time'] = time();

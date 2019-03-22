@@ -20,7 +20,7 @@
           <h1>Miracle Life</h1>
         </header>
         <div class="profile-photo-container">
-          <img src="./Public/Admin/images/profile-photo.jpg" alt="Profile Photo" class="img-responsive">  
+          <img src="./Public/Admin/images/logo.svg" alt="Profile Photo" class="img-responsive">  
           <div class="profile-photo-overlay"></div>
         </div>    
 
@@ -96,7 +96,7 @@
 							<div class="row form-group">
 									<div class="col-lg-6 col-md-6 form-group">                  
 											<label for="inputLastLoginTime">Last Login Time</label>
-											<input type="text" class="form-control" id="inputLastLoginTime" name="last_login_time" value="<{$userInfo.last_login_time|date_format:'Y-m-d H:i:s'}>" readonly="readonly">
+											<input type="text" class="form-control" id="inputLastLoginTime" name="last_login_time" value="<{$smarty.session.last_login_time|date_format:'Y-m-d H:i:s'}>" readonly="readonly">
 									</div>
 									<div class="col-lg-6 col-md-6 form-group">                  
 											<label for="inputRegisterDate">Register Date</label>

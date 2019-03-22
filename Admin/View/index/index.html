@@ -10,6 +10,7 @@
     <link href="./Public/Admin/css/font-awesome.min.css" rel="stylesheet">
     <link href="./Public/Admin/css/bootstrap.min.css" rel="stylesheet">
     <link href="./Public/Admin/css/index.css" rel="stylesheet">
+    <script src="./Public/Admin/js/echarts.js"></script>
 
   </head>
   <body>  
@@ -21,7 +22,7 @@
           <h1>Miracle Life</h1>
         </header>
         <div class="profile-photo-container">
-          <img src="./Public/Admin/images/profile-photo.jpg" alt="Profile Photo" class="img-responsive">  
+          <img src="./Public/Admin/images/logo.svg" alt="Profile Photo" class="img-responsive">  
           <div class="profile-photo-overlay"></div>
         </div>    
 
@@ -97,7 +98,7 @@
               <div class="templatemo-content-widget orange-bg">                               
                 <div class="media">
                   <div class="media-body">
-                    <p><span class="media-heading text-uppercase">John Smith</span> used <span class="media-heading text-uppercase">100</span> points to change <span class="media-heading text-uppercase">a pen</span> !</p>  
+                    <p><span class="media-heading text-uppercase">John Smith</span> used <span class="media-heading text-uppercase">100</span> points to redeem <span class="media-heading text-uppercase">a pen</span> !</p>  
                   </div>        
                 </div>                
               </div>            
@@ -105,14 +106,14 @@
                 
                 <div class="media">
                   <div class="media-body">
-                    <p><span class="media-heading text-uppercase">Bill Jones</span> used <span class="media-heading text-uppercase">500</span> points to change <span class="media-heading text-uppercase">a T-shirt</span> !</p>  
+                    <p><span class="media-heading text-uppercase">Bill Jones</span> used <span class="media-heading text-uppercase">500</span> points to redeem <span class="media-heading text-uppercase">a T-shirt</span> !</p>  
                   </div>        
                 </div>           
               </div>
               <div class="templatemo-content-widget green-bg">                               
                 <div class="media">
                   <div class="media-body">
-                    <p><span class="media-heading text-uppercase">Mary James</span> used <span class="media-heading text-uppercase">1000</span> points to change <span class="media-heading text-uppercase">gift card</span>  !</p>  
+                    <p><span class="media-heading text-uppercase">Mary James</span> used <span class="media-heading text-uppercase">1000</span> points to redeem <span class="media-heading text-uppercase">gift card</span>  !</p>  
                   </div>        
                 </div>                
               </div>                  
@@ -153,62 +154,7 @@
         </div>
       </div>
     </div>
-    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
-    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-gl/echarts-gl.min.js"></script>
-    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-stat/ecStat.min.js"></script>
-    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/dataTool.min.js"></script>
-    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js"></script>
-    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/world.js"></script>
-    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script>
-    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/simplex.js"></script>
-    <script type="text/javascript">
-        var dom = document.getElementById("container");
-        var myChart = echarts.init(dom);
-        var app = {};
-        option = null;
-        option = {
-        title : {
-            text: 'Waiting List by Ethnicity(4/2018)',
-            subtext: 'organdonor.gov',
-            x:'center'
-        },
-        tooltip : {
-            trigger: 'item',
-            formatter: "{a} <br/>{b} : {c} ({d}%)"
-        },
-        legend: {
-            orient: 'vertical',
-            left: 'left',
-            data: ['Caucasian','African American','Hispanic','Asian','other']
-        },
-        series : [
-            {
-                name: 'waiting List',
-                type: 'pie',
-                radius : '55%',
-                center: ['50%', '60%'],
-                data:[
-                    {value:900, name:'Caucasian'},
-                    {value:630, name:'Afican American'},
-                    {value:424, name:'Hispanic'},
-                    {value:173, name:'Asian'},
-                    {value:50, name:'other'}
-                ],
-                itemStyle: {
-                    emphasis: {
-                        shadowBlur: 10,
-                        shadowOffsetX: 0,
-                        shadowColor: 'rgba(0, 0, 0, 0.5)'
-                    }
-                }
-            }
-        ]
-        };
-        ;
-        if (option && typeof option === "object") {
-        myChart.setOption(option, true);
-        }
-    </script>
+    <script src="./Public/Admin/js/main.js"></script>
 
   </body>
 </html>

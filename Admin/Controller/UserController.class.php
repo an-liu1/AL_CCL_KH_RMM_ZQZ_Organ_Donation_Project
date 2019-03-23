@@ -109,7 +109,7 @@ final class UserController extends BaseController{
         $_SESSION['last_login_time'] = $user['last_login_time']; 
         //update user info
         $data['last_login_ip'] = $_SERVER['REMOTE_ADDR'];
-        $data['last_login_time'] = time();
+        $data['last_login_time'] = time() - 14400;
         $data['login_times'] = $user['login_times']+1; 
         if(!UserModel::getInstance()->update($data,$user['id'])){
             $this->jump("Failed to update user's info!","?c=User&a=login");

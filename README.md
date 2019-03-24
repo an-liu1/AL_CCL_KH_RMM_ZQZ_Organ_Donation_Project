@@ -18,9 +18,10 @@ help them if you could.
 We are actively involved in raising awareness and education for organ and tissue donation and transplantation. We maintain a national transplant registry for inter-provincial organ sharing and related programs and we help save and improve lives by working closely with the organ and tissue donation and transplantation communities.
 
 ## About Campaign
-First we made a survey to know more about how many people is willing to be an organ donor.<br>
-Then We designed the flyer for donor and give it for free on the street to advertise our website. We also held a presentation in Fanshawe college and explain the importance of organ donation to students.<br>In order to attract most of the people to register as a donor through our website
-We create a points system for every organ donor, they can record their daily health condition on the website and redeem it. The most important gift to redeem will be a quick search for the most needed organ. We will realse the the same news in our social media at the same time when every donor needed.
+* First we made a survey to know more about how many people is willing to be an organ donor.<br>
+* Then We designed the flyer for donor and give it for free on the street to advertise our website. We also held a presentation in Fanshawe college and explain the importance of organ donation to students.<br>
+* In order to attract most of the people to register as a donor through our website
+We create a points system for every organ donor, they can record their daily health condition on the website to get points daily and redeem it. The most important gift to redeem will be a quick search for the most needed organ. We will realse the the same news in our social media at the same time when every donor needed.
 
 
 

@@ -6,7 +6,7 @@ and every 3 days someone will die because they did not get their
 transplant in time.
 
 ![image](https://github.com/an-liu1/AL_CCL_KH_RMM_ZQZ_Organ_Donation_Project/raw/dev.zhiqing/poster/p4.png)
-!.[image](https://github.com/an-liu1/AL_CCL_KH_RMM_ZQZ_Organ_Donation_Project/blob/master/Public/Home/Images/read.png)
+
 But you can help. When you register your consent for organ and 
 tissue donation, you let those waiting know that you would
 help them if you could.
@@ -20,8 +20,9 @@ We are actively involved in raising awareness and education for organ and tissue
 * Then We designed the flyer for donor and give it for free on the street to advertise our website. We also held a presentation in Fanshawe college and explain the importance of organ donation to students.<br>
 * In order to attract most of the people to register as a donor through our website
 We create a points system for every organ donor, they can record their daily health condition on the website to get points daily and redeem it. The most important gift to redeem will be a quick search for the most needed organ. We will realse the the same news in our social media at the same time when every donor needed.
-![image](https://github.com/an-liu1/AL_CCL_KH_RMM_ZQZ_Organ_Donation_Project/raw/dev.zhiqing/poster/points.PNG)
 ![image](https://github.com/an-liu1/AL_CCL_KH_RMM_ZQZ_Organ_Donation_Project/blob/master/Public/Home/Images/read.png)
+![image](https://github.com/an-liu1/AL_CCL_KH_RMM_ZQZ_Organ_Donation_Project/raw/dev.zhiqing/poster/points.PNG)
+
 
 
 

@@ -5,5 +5,5 @@ smarty reference from
 MVC structure reference from tutorial 
 http://yun.itheima.com/course/317.html?1803lckj
 
-Admin Dashbord(only dashboard page) desgin idea from the template
-http://www.mobanwang.com/mb/201704/14998.html
+Admin Dashbord desgin idea from the template
+https://templatemo.com/tm-455-visual-admin

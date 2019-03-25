@@ -1,0 +1,23 @@
+{
+  "name": "al_ccl_kh_rmm_zqz_organ_donation_project",
+  "version": "1.0.0",
+  "description": "Today, in Ontario, there are over 1,500 people waiting for a \r lifesaving organ transplant. This is their only treatment option, \r and every 3 days someone will die because they did not get their \r transplant in time.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/an-liu1/AL_CCL_KH_RMM_ZQZ_Organ_Donation_Project.git"
+  },
+  "author": "Chaochao Li, An Liu, Ziqing Zhao, Runmin Ma, Kyle Heuchan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/an-liu1/AL_CCL_KH_RMM_ZQZ_Organ_Donation_Project/issues"
+  },
+  "homepage": "https://github.com/an-liu1/AL_CCL_KH_RMM_ZQZ_Organ_Donation_Project#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2"
+  }
+}

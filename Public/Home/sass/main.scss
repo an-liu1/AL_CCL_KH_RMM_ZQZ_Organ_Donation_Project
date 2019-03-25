@@ -1,6 +1,35 @@
 @charset "UTF-8";
 @import '_vars';
-@import 'modules/_header';
-@import 'modules/_content';
-@import 'modules/_footer';
+@import 'modules/header.scss';
+@import 'modules/content.scss';
+@import 'modules/footer.scss';
 
+
+body {
+    line-height: 1.7;
+    color: #4d4d4d;
+    font-weight: 400;
+    font-size: 1rem; }
+  
+  ::-moz-selection {
+    background: $bg-color;
+    color: $main-color; }
+  
+  ::selection {
+    background: $bg-color;
+    color: $main-color; }
+  
+  a {
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease; }
+    a:hover {
+      text-decoration: none; }
+  
+  h1, h2, h3, h4, h5,
+  .h1, .h2, .h3, .h4, .h5 {
+    font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+  
+ 
+
+ 

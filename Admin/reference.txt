@@ -1,0 +1,9 @@
+smarty reference from 
+1. https://github.com/smarty-php/smarty/releases/tag/v3.1.16    download the smarty template
+2. https://www.smarty.net/docs/en/        smarty document
+
+MVC structure reference from tutorial 
+http://yun.itheima.com/course/317.html?1803lckj
+
+Admin Dashbord desgin idea from the template
+https://templatemo.com/tm-455-visual-admin

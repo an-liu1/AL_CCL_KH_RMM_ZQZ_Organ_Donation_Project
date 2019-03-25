@@ -1,5 +1,3 @@
-# AL_CCL_KH_RMM_ZQZ_Organ_Donation_Project
-
 
 ## About Organ Donation
 Today, in Ontario, there are over 1,500 people waiting for a 

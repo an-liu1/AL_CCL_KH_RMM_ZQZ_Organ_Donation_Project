@@ -21,6 +21,7 @@ We are actively involved in raising awareness and education for organ and tissue
 * In order to attract most of the people to register as a donor through our website
 We create a points system for every organ donor, they can record their daily health condition on the website to get points daily and redeem it. The most important gift to redeem will be a quick search for the most needed organ. We will realse the the same news in our social media at the same time when every donor needed.
 ![image](https://github.com/an-liu1/AL_CCL_KH_RMM_ZQZ_Organ_Donation_Project/raw/dev.zhiqing/poster/points.PNG)
+![image](https://github.com/an-liu1/AL_CCL_KH_RMM_ZQZ_Organ_Donation_Project/blob/master/Public/Home/Images/read.png)
 
 
 
